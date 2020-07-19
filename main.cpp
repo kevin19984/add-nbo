@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
 		return 0;
 	}
 
-	uint8_t buffer[4] = { 0x00, 0x00, 0x00, 0x00 };
+	uint8_t buffer[5] = { 0x00, 0x00, 0x00, 0x00, 0x00 };
 	int len;
 	uint32_t num1, num2;
 
