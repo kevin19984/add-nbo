@@ -23,13 +23,13 @@ int main(int argc, char *argv[]) {
 	
 	FILE *file1, *file2;
 
-	if ((file1 = fopen(argv[1], "r")) == NULL) {
+	if ((file1 = fopen(argv[1], "rb")) == NULL) {
 		printf("Can't open file %s\n", argv[1]);
 		printUsage(argv[0]);
 		return 0;
 	}
 
-	if ((file2 = fopen(argv[2], "r")) == NULL) {
+	if ((file2 = fopen(argv[2], "rb")) == NULL) {
 		printf("Can't open file %s\n", argv[2]);
 		printUsage(argv[0]);
 		return 0;
@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
 		return 0;
 	}
 	num2 = bufToNum_hbo(buffer);
-	
+
 	fclose(file2);
 	fclose(file1);
 
